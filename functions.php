@@ -12,9 +12,16 @@ function dfef_child_enqueue_assets() {
     $theme_version = wp_get_theme()->get( 'Version' );
 
     wp_enqueue_style(
-        'dfef-child-child',
+        'dfef-child-style',
         get_stylesheet_uri(),
         array(),
+        $theme_version
+    );
+
+    wp_enqueue_style(
+        'dfef-child-assets',
+        get_stylesheet_directory_uri() . '/assets/css/style.css',
+        array( 'dfef-child-style' ),
         $theme_version
     );
 

@@ -43,6 +43,8 @@ projet-equipe-dfef/
 5. Vérifier l’affichage du site, le CSS, le JavaScript et les erreurs PHP.
 
 
+**Ne pas activer le thème avant d’avoir renseigné et installé le parent.**
+
 Référence : [documentation WordPress sur les thèmes enfants](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
 
 ## Conventions de travail
@@ -69,7 +71,7 @@ Chaque membre doit contribuer avec son propre compte. L’auteur ne valide pas l
 
 | Tâche | Responsable | État |
 | --- | --- | --- |
-| Préparer l’arborescence, le README et le .gitignore | Adam | En cours |
+| Préparer l’arborescence, le README et le .gitignore | Adam | Base publiée ; configuration WordPress à valider |
 | Confirmer le concept et le thème parent | Équipe | À faire |
 | Ajouter les membres et enseignants | Adam, après réception des pseudos | En attente |
 | Développer une première section et ouvrir une PR | Binôme, après invitation | À faire |
@@ -82,7 +84,9 @@ Chaque membre doit contribuer avec son propre compte. L’auteur ne valide pas l
 
 Utiliser un tableau GitHub Projects avec les colonnes **À faire**, **En cours**, **À vérifier**, **Terminé**.
 
-Premières tâches à créer comme issues : confirmer le concept et le parent ; donner accès à l’équipe et aux enseignants ; tester le thème enfant ; développer les deux sections ; effectuer les relectures croisées et synchroniser les copies locales.
+Issues créées : [concept et README](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/1), [accès collaborateurs](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/2), [configuration du thème](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/3), [section Adam](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/4), [section binôme](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/5), [synchronisation et remise](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/6).
+
+[Ouvrir le tableau Projet équipe DFEF](https://github.com/users/Adam-Boussakour/projects/1). Les six tâches sont initialement dans « À faire ».
 
 Classer les issues avec les labels existants adaptés : `documentation`, `enhancement`, `bug` ou `help wanted`. Une tâche passe en « À vérifier » quand sa PR est prête et en « Terminé » après validation et fusion.
 
