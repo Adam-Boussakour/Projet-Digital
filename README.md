@@ -13,7 +13,6 @@ Création d’un site permettant aux citoyens d’évaluer leur impact écologiq
 | Ensemble | Conception & validation | Brainstorming, choix graphiques, tests, corrections, préparation de la présentation finale | Adam et Mohamed |
 | Professeur | Enseignant | Suivi pédagogique | Compte GitHub en attente |
 
-Une invitation a été envoyée à Mohamed ; son acceptation doit être vérifiée. Le professeur sera invité dès réception de son pseudo GitHub.
 
 ## Outils
 
