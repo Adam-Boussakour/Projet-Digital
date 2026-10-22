@@ -1,4 +1,4 @@
-# projet-equipe-dfef — dépôt d’équipe
+# projet digital
 
 Base de travail pour l’atelier DFEF : préparer un thème enfant WordPress et organiser la collaboration avec GitHub.
 
