@@ -11,13 +11,12 @@ Création d’un site permettant aux citoyens d’évaluer leur impact écologiq
 | Adam | Chef de projet / UX-UI | Organisation du projet, répartition des tâches, suivi de l’avancement, wireframes, design system | [Adam-Boussakour](https://github.com/Adam-Boussakour) |
 | Mohamed | Designer / Contenu | Moodboard, identité visuelle, recherche de contenus, rédaction, aide à la conception des interfaces | [Moha-Mad-19](https://github.com/Moha-Mad-19) |
 | Ensemble | Conception & validation | Brainstorming, choix graphiques, tests, corrections, préparation de la présentation finale | Adam et Mohamed |
-| Professeur | Enseignant | Suivi pédagogique | Compte GitHub en attente |
+| Professeur | Enseignant | Suivi pédagogique |  |
 
 
 ## Outils
 
 - **WordPress**, installé en local.
-- **Twenty Twenty-Five**, thème parent actif sur l’installation locale.
 - **GitHub**, pour le dépôt, les branches, les commits, les pull requests, les issues et le tableau Projects.
 - **Visual Studio Code**, pour modifier les fichiers.
 
@@ -35,7 +34,7 @@ Projet-Digital/
     └── img/.gitkeep
 ```
 
-## Conventions validées
+## Conventions
 
 - Ne pas travailler directement dans `main`.
 - Une tâche = une issue et une branche `feature/nom-de-la-tache`.
