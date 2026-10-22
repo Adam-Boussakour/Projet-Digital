@@ -1,7 +1,7 @@
 <?php
 /**
  * Ressources du theme enfant DFEF.
- * Verifier le chargement du CSS du parent avant activation (voir README).
+ * Le parent Twenty Twenty-Five charge deja sa feuille de style.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -14,7 +14,7 @@ function dfef_child_enqueue_assets() {
     wp_enqueue_style(
         'dfef-child-style',
         get_stylesheet_uri(),
-        array(),
+        array( 'twentytwentyfive-style' ),
         $theme_version
     );
 
