@@ -1,104 +1,118 @@
-# projet digital
+# Projet Digital
 
-Base de travail pour l’atelier DFEF : préparer un thème enfant WordPress et organiser la collaboration avec GitHub.
+## Concept et public
 
-## Équipe et concept
+Création d’un site permettant aux citoyens d’évaluer leur impact écologique. Le site vise les jeunes de **18 à 26 ans** qui cherchent à améliorer leur impact écologique.
 
-| Personne | Rôle | Compte GitHub |
-| --- | --- | --- |
-| Adam Boussakour | Propriétaire du dépôt, préparation technique | @Adam-Boussakour |
-| Binôme — à compléter | Rôle à définir ensemble | À compléter |
-| Enseignants DFEF / DIA | Suivi et relecture | À compléter |
+## Équipe et répartition des tâches
 
-**Nom du projet et concept : à définir avec l’équipe.** Ce dépôt contient une base technique, pas encore le site final.
+| Personne | Rôle principal | Tâches | GitHub |
+| --- | --- | --- | --- |
+| Adam | Chef de projet / UX-UI | Organisation du projet, répartition des tâches, suivi de l’avancement, wireframes, design system | [Adam-Boussakour](https://github.com/Adam-Boussakour) |
+| Mohamed | Designer / Contenu | Moodboard, identité visuelle, recherche de contenus, rédaction, aide à la conception des interfaces | [Moha-Mad-19](https://github.com/Moha-Mad-19) |
+| Ensemble | Conception & validation | Brainstorming, choix graphiques, tests, corrections, préparation de la présentation finale | Adam et Mohamed |
+| Professeur | Enseignant | Suivi pédagogique | Compte GitHub en attente |
+
+Une invitation a été envoyée à Mohamed ; son acceptation doit être vérifiée. Le professeur sera invité dès réception de son pseudo GitHub.
 
 ## Outils
 
-- WordPress et le thème parent **à confirmer**.
-- PHP pour le thème enfant, HTML, CSS et JavaScript pour l’interface.
-- Git et GitHub : branches, commits, pull requests, issues et Projects.
-- Visual Studio Code pour modifier les fichiers.
-- Environnement WordPress local : à choisir avec l’équipe.
+- **WordPress**, installé en local.
+- **Twenty Twenty-Five**, thème parent actif sur l’installation locale.
+- **GitHub**, pour le dépôt, les branches, les commits, les pull requests, les issues et le tableau Projects.
+- **Visual Studio Code**, pour modifier les fichiers.
 
-## Arborescence
+## Arborescence du thème enfant
 
 ```text
-projet-equipe-dfef/
+Projet-Digital/
 ├── .gitignore
 ├── README.md
-├── style.css              # En-tête du thème enfant et styles
-├── functions.php          # Chargement des ressources du thème enfant
+├── style.css
+├── functions.php
 └── assets/
     ├── css/style.css
     ├── js/main.js
     └── img/.gitkeep
 ```
 
-## Installation du thème enfant
+Le thème enfant hérite des modèles de Twenty Twenty-Five. Le champ `Template` de `style.css` désigne son dossier `twentytwentyfive`.
 
-1. Confirmer le thème parent avec l’équipe et l’installer dans WordPress.
-2. Dans `style.css`, remplacer `Template: a-completer` par le nom exact du dossier du thème parent.
-3. Vérifier comment le parent charge ses feuilles de style ; adapter les dépendances dans `functions.php` si nécessaire pour éviter les doublons.
-4. Placer le dépôt dans `wp-content/themes/projet-equipe-dfef` et activer le thème enfant dans Apparence → Thèmes.
-5. Vérifier l’affichage du site, le CSS, le JavaScript et les erreurs PHP.
+## Installation locale
 
+1. Vérifier que WordPress local fonctionne et que Twenty Twenty-Five est installé dans `wp-content/themes/twentytwentyfive`.
+2. Cloner ce dépôt dans `wp-content/themes/Projet-Digital` :
 
-**Ne pas activer le thème avant d’avoir renseigné et installé le parent.**
+   ```sh
+   git clone https://github.com/Adam-Boussakour/Projet-Digital.git
+   ```
 
-Référence : [documentation WordPress sur les thèmes enfants](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
+3. Dans WordPress, ouvrir **Apparence → Thèmes** et activer **Projet Digital Child**.
+4. Vérifier l’affichage des pages, le chargement du CSS et du JavaScript, ainsi que l’absence d’erreur PHP.
 
-## Conventions de travail
+Twenty Twenty-Five charge sa propre feuille de style. `functions.php` charge ensuite `style.css` du thème enfant, puis `assets/css/style.css` et `assets/js/main.js`.
 
-- `main` contient les modifications relues et intégrées.
-- Une tâche = une issue ; une branche par tâche : `feature/nom-de-la-tache`, `fix/nom-du-probleme` ou `docs/nom-du-document`.
-- Noms des fichiers et branches en minuscules, sans espace ni accent ; `README.md` conserve le nom conventionnel.
-- Commits courts et explicites, par exemple `Ajout de la section presentation`.
-- Faire un commit par modification cohérente ; ne pas ajouter les fichiers générés ni les identifiants.
+**État de vérification :** le parent et les chemins sont configurés ; l’activation et les tests dans votre WordPress local restent à effectuer.
+
+Références : [thèmes enfants WordPress](https://developer.wordpress.org/themes/advanced-topics/child-themes/), [chargement des styles de Twenty Twenty-Five](https://github.com/WordPress/twentytwentyfive/blob/trunk/functions.php).
+
+## Conventions validées
+
+- Ne pas travailler directement dans `main`.
+- Une tâche = une issue et une branche `feature/nom-de-la-tache`.
+- Noms des branches en minuscules, sans espace ni accent.
+- Messages de commits explicites en français, par exemple `Ajout de la section presentation`.
+- Ouvrir une pull request vers `main`, avec une description des changements et des vérifications.
+- L’autre membre relit et approuve avant la fusion. L’auteur ne valide pas lui-même sa PR.
 
 ### Cycle d’une contribution
 
-1. Mettre sa copie à jour : `git switch main`, puis `git pull --ff-only`.
-2. Créer sa branche : `git switch -c feature/nom-de-la-tache`.
-3. Modifier et vérifier les fichiers, puis faire un commit.
-4. Publier : `git push -u origin feature/nom-de-la-tache`.
-5. Ouvrir une PR vers `main` : objectif, modifications, vérifications et issue liée (`Closes #numero`).
-6. L’autre membre relit, laisse un commentaire constructif et approuve après correction éventuelle.
-7. Fusionner la PR, puis chacun actualise son `main` avec `git pull --ff-only`.
+```sh
+git switch main
+git pull --ff-only
+git switch -c feature/nom-de-la-tache
+# Modifier et vérifier les fichiers.
+git add chemin/du/fichier
+git commit -m "Description claire de la modification"
+git push -u origin feature/nom-de-la-tache
+```
 
-Chaque membre doit contribuer avec son propre compte. L’auteur ne valide pas lui-même sa PR.
+Sur GitHub, ouvrir la PR vers `main`, préciser l’objectif et les tests, puis la faire relire par l’autre membre. Après fusion, chacun met sa copie à jour :
 
-## Répartition des tâches
-
-| Tâche | Responsable | État |
-| --- | --- | --- |
-| Préparer l’arborescence, le README et le .gitignore | Adam | Base publiée ; configuration WordPress à valider |
-| Confirmer le concept et le thème parent | Équipe | À faire |
-| Ajouter les membres et enseignants | Adam, après réception des pseudos | En attente |
-| Développer une première section et ouvrir une PR | Binôme, après invitation | À faire |
-| Relire cette PR et laisser un commentaire | Adam | À faire |
-| Développer une autre section et ouvrir une PR | Adam | À faire |
-| Relire la PR d’Adam et laisser un commentaire | Binôme | À faire |
-| Tester et synchroniser les deux ordinateurs | Équipe | À faire |
+```sh
+git switch main
+git pull --ff-only
+```
 
 ## Planification
 
-Utiliser un tableau GitHub Projects avec les colonnes **À faire**, **En cours**, **À vérifier**, **Terminé**.
+[Tableau GitHub Projects](https://github.com/users/Adam-Boussakour/projects/1) : **À faire → En cours → À vérifier → Terminé**.
 
-Issues créées : [concept et README](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/1), [accès collaborateurs](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/2), [configuration du thème](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/3), [section Adam](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/4), [section binôme](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/5), [synchronisation et remise](https://github.com/Adam-Boussakour/projet-equipe-dfef/issues/6).
+Une tâche passe en « À vérifier » quand sa PR est prête et en « Terminé » après validation et fusion. Utiliser les labels existants selon la tâche : `documentation`, `enhancement`, `bug` ou `help wanted`.
 
-[Ouvrir le tableau Projet équipe DFEF](https://github.com/users/Adam-Boussakour/projects/1). Les six tâches sont initialement dans « À faire ».
+Premières issues :
 
-Classer les issues avec les labels existants adaptés : `documentation`, `enhancement`, `bug` ou `help wanted`. Une tâche passe en « À vérifier » quand sa PR est prête et en « Terminé » après validation et fusion.
+- [#1 — Concept et README](https://github.com/Adam-Boussakour/Projet-Digital/issues/1).
+- [#2 — Accès des membres et du professeur](https://github.com/Adam-Boussakour/Projet-Digital/issues/2).
+- [#3 — Configuration et tests du thème enfant](https://github.com/Adam-Boussakour/Projet-Digital/issues/3).
+- [#4 — Contribution d’Adam](https://github.com/Adam-Boussakour/Projet-Digital/issues/4).
+- [#5 — Contribution de Mohamed](https://github.com/Adam-Boussakour/Projet-Digital/issues/5).
+- [#6 — Synchronisation et remise](https://github.com/Adam-Boussakour/Projet-Digital/issues/6).
 
-## Vérification avant remise
+Les issues de contribution proviennent de la préparation initiale ; leur contenu précis doit être défini avec l’équipe en accord avec les rôles ci-dessus.
 
-- [ ] Concept, parent, équipe et répartition confirmés.
-- [ ] Tous les membres et enseignants ont accepté leur invitation.
-- [ ] Thème enfant configuré et testé dans WordPress.
-- [ ] README complété et .gitignore présent.
-- [ ] Issues créées et tableau Projects organisé.
-- [ ] Une PR par membre fusionnée, avec description, commentaire et relecture croisée.
+## Validation avant remise
+
+- [x] Concept, public, équipe, outils et répartition confirmés.
+- [x] Thème parent identifié : Twenty Twenty-Five.
+- [x] Conventions de branches, commits et relecture validées.
+- [ ] Mohamed a accepté son invitation et le professeur a accès au dépôt.
+- [ ] README relu et changements intégrés dans `main`.
+- [ ] Thème enfant activé et testé dans WordPress local.
+- [ ] Chaque membre a fusionné au moins une PR avec description et commentaire de relecture.
 - [ ] Les deux ordinateurs ont le même `main`.
-- [ ] Aucun mot de passe ni clé dans les fichiers ou l’historique.
+- [ ] Absence de mots de passe et de clés vérifiée dans les fichiers et l’historique.
 
-Une seule remise par équipe : [lien du dépôt](https://github.com/Adam-Boussakour/projet-equipe-dfef).
+Le `.gitignore` exclut les fichiers locaux courants : `.env`, `wp-config.php`, dépendances et sauvegardes. Ne jamais ajouter d’identifiants au dépôt.
+
+**Remise :** [lien du dépôt Projet Digital](https://github.com/Adam-Boussakour/Projet-Digital), une seule remise par équipe.
