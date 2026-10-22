@@ -44,5 +44,5 @@ Projet-Digital/
 - Ouvrir une pull request vers `main`, avec une description des changements et des vérifications.
 - L’autre membre relit et approuve avant la fusion. L’auteur ne valide pas lui-même sa PR.
 
-### Cycle d’une contribution
+
 
