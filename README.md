@@ -2,7 +2,7 @@
 
 ## Concept et public
 
-Création d’un site permettant aux citoyens d’évaluer leur impact écologique. Le site vise les jeunes de **18 à 26 ans** qui cherchent à améliorer leur impact écologique.
+Création d’un site permettant aux citoyens d’évaluer leur impact écologique. Le site vise les jeunes de **16 à 30 ans** qui cherchent à améliorer leur impact écologique.
 
 ## Équipe et répartition des tâches
 
