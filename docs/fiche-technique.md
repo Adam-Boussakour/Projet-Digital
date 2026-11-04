@@ -1,4 +1,4 @@
-# Fiche technique — Éco-Citoyen
+# Fiche technique : Éco-Citoyen
 
 ## 1. Présentation du projet
 
