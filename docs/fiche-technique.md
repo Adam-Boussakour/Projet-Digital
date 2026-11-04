@@ -40,7 +40,7 @@ Les rubriques de navigation sont : Impact, Conseils, Défis, Mes progrès et Mon
 | Quoi | Comment | Pourquoi |
 | --- | --- | --- |
 | En-tête, logo et navigation entre les rubriques | Éléments réutilisables du thème enfant et blocs Gutenberg adaptés | Garder des repères cohérents sur toutes les pages |
-| Menu mobile ouvert ou fermé | Bouton accessible, CSS et JavaScript si nécessaire | Permettre la navigation sur un petit écran |
+| Menu  | Bouton accessible, CSS et JavaScript si nécessaire | Permettre la navigation sur un petit écran |
 | Pied de page | Élément réutilisable du thème ; contenu à préciser | Regrouper les informations secondaires utiles |
 | Titres, paragraphes, images et sections de présentation | Blocs Gutenberg | Permettre au client de modifier les contenus sans toucher au code |
 | Boutons et liens | Éléments HTML adaptés à l'action, styles partagés dans le thème enfant | Rendre les actions identifiables et cohérentes |
@@ -64,7 +64,7 @@ Les composants seront conçus d'abord pour mobile, puis adaptés à la tablette 
 | Textes de présentation, descriptions et explications | Contenus modifiables avec Gutenberg | Permettre au client de mettre le site à jour |
 | Logo, icônes et images propres au thème | Ressources rangées dans `assets/img/` | Centraliser les ressources nécessaires au thème |
 | Images ajoutées dans les pages | Médiathèque WordPress ; fichiers optimisés et textes alternatifs adaptés | Illustrer les contenus tout en maîtrisant le poids des pages |
-| Polices | Deux familles au maximum ; fichiers et chargement limités au nécessaire | Préserver la lisibilité et limiter les téléchargements |
+|  |  |
 
 Le thème parent déclaré dans le dépôt est Twenty Twenty-Five (`Template: twentytwentyfive`). Le thème enfant existant est « Projet Digital Child ». Les réglages prévus dans `theme.json` devront être mis en place et vérifiés avec cette base.
 
@@ -73,9 +73,9 @@ Le thème parent déclaré dans le dépôt est Twenty Twenty-Five (`Template: tw
 | Quoi : état ou action | Comment | Pourquoi : information transmise |
 | --- | --- | --- |
 | Utilisateur connecté ou non connecté | Session WordPress et vérification côté serveur | Diriger vers le quiz ou vers l'inscription/connexion |
-| Menu ouvert ou fermé | JavaScript et état accessible du bouton si nécessaire | Indiquer si les liens de navigation sont affichés |
+| Menu  | JavaScript et état accessible du bouton si nécessaire | Indiquer si les liens de navigation sont affichés |
 | Réponse sélectionnée ou non sélectionnée | Champs natifs et styles de sélection ; JavaScript pour le parcours | Confirmer le choix effectué |
-| Question obligatoire sans réponse | Validation et message explicite | Expliquer pourquoi la progression est bloquée |
+ |
 | Passage à la question suivante ou précédente | JavaScript et mise à jour de la progression | Situer l'utilisateur dans le quiz |
 | Enregistrement du quiz ou d'une étape de défi | Requête au serveur, état de chargement, puis confirmation ou erreur | Éviter l'incertitude et les validations répétées |
 | Génération des conseils IA en cours, réussie ou en échec | Appel côté serveur et messages dans l'interface | Expliquer l'attente et permettre une nouvelle tentative en cas d'échec |
@@ -136,7 +136,7 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 | Sémantique et référencement | Zones HTML pertinentes, un titre principal par page, niveaux de titres cohérents, titres de page et descriptions adaptés | Inspection du HTML et validateur W3C |
 | Performance | Images adaptées au web, deux familles de polices au maximum, bibliothèques limitées et justifiées | Onglet Réseau et Lighthouse |
 | Édition client | Contenus éditoriaux modifiables dans Gutenberg sans modifier le code ; contenus dynamiques administrables selon la solution retenue | Test de modification par un tiers |
-| Sécurité | Aucune information sensible dans Git ; validation et protection des formulaires ; accès aux résultats personnels contrôlé côté serveur | Revue du dépôt et essais des formulaires et contrôles d'accès |
+|  |
 | IA | Fonction personnalisée intégrée au projet ; appels via le serveur et clés protégées ; traitement des erreurs | Essais avec différents jeux de réponses et historique GitHub |
 | Données personnelles | Ne collecter que les informations nécessaires ; ne pas inclure de données personnelles réelles dans les fichiers de test ; préciser conservation et suppression | Revue des champs collectés, du stockage et des échanges avec l'IA |
 | Organisation | Noms de fichiers en minuscules, mots séparés par des tirets, sans espace ni accent ; ressources classées par type ; code indenté et commenté aux endroits utiles | Relecture de l'arborescence et des modifications |
@@ -162,18 +162,5 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 - Choisir la solution des formulaires et préciser le parcours de récupération d'accès au compte.
 - Préciser les informations du pied de page, la conservation des données et les éventuelles pages complémentaires nécessaires.
 
-## 12. Suivi de la remise
 
-- [x] Pages et composants de l'arborescence recensés.
-- [x] Outils envisagés et raisons de leur utilisation décrits.
-- [x] Idée de données dynamiques et fonction IA décrites.
-- [x] Contraintes du cadre technique reprises avec des moyens de vérification.
-- [ ] Choix et propositions de cette première version relus par l'équipe.
-- [ ] Fichier ajouté dans `docs/fiche-technique.md` dans le dépôt du projet.
-- [ ] Pull Request relue et fusionnée.
 
-## Sources de cette fiche
-
-- Support de cours « DFEF — 01 Cadre technique » fourni par l'enseignant.
-- Arborescence « Éco-Citoyen » fournie par l'équipe.
-- Choix confirmés : compte obligatoire après « Découvrir mon impact », accès direct au quiz si déjà connecté, conseils IA selon les réponses, score d'impact écologique avec barème encore à définir.
