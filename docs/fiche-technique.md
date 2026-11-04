@@ -64,7 +64,6 @@ Les composants seront conçus d'abord pour mobile, puis adaptés à la tablette 
 | Textes de présentation, descriptions et explications | Contenus modifiables avec Gutenberg | Permettre au client de mettre le site à jour |
 | Logo, icônes et images propres au thème | Ressources rangées dans `assets/img/` | Centraliser les ressources nécessaires au thème |
 | Images ajoutées dans les pages | Médiathèque WordPress ; fichiers optimisés et textes alternatifs adaptés | Illustrer les contenus tout en maîtrisant le poids des pages |
-|  |  |
 
 Le thème parent déclaré dans le dépôt est Twenty Twenty-Five (`Template: twentytwentyfive`). Le thème enfant existant est « Projet Digital Child ». Les réglages prévus dans `theme.json` devront être mis en place et vérifiés avec cette base.
 
@@ -75,7 +74,6 @@ Le thème parent déclaré dans le dépôt est Twenty Twenty-Five (`Template: tw
 | Utilisateur connecté ou non connecté | Session WordPress et vérification côté serveur | Diriger vers le quiz ou vers l'inscription/connexion |
 | Menu  | JavaScript et état accessible du bouton si nécessaire | Indiquer si les liens de navigation sont affichés |
 | Réponse sélectionnée ou non sélectionnée | Champs natifs et styles de sélection ; JavaScript pour le parcours | Confirmer le choix effectué |
- |
 | Passage à la question suivante ou précédente | JavaScript et mise à jour de la progression | Situer l'utilisateur dans le quiz |
 | Enregistrement du quiz ou d'une étape de défi | Requête au serveur, état de chargement, puis confirmation ou erreur | Éviter l'incertitude et les validations répétées |
 | Génération des conseils IA en cours, réussie ou en échec | Appel côté serveur et messages dans l'interface | Expliquer l'attente et permettre une nouvelle tentative en cas d'échec |
@@ -136,7 +134,6 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 | Sémantique et référencement | Zones HTML pertinentes, un titre principal par page, niveaux de titres cohérents, titres de page et descriptions adaptés | Inspection du HTML et validateur W3C |
 | Performance | Images adaptées au web, deux familles de polices au maximum, bibliothèques limitées et justifiées | Onglet Réseau et Lighthouse |
 | Édition client | Contenus éditoriaux modifiables dans Gutenberg sans modifier le code ; contenus dynamiques administrables selon la solution retenue | Test de modification par un tiers |
-|  |
 | IA | Fonction personnalisée intégrée au projet ; appels via le serveur et clés protégées ; traitement des erreurs | Essais avec différents jeux de réponses et historique GitHub |
 | Données personnelles | Ne collecter que les informations nécessaires ; ne pas inclure de données personnelles réelles dans les fichiers de test ; préciser conservation et suppression | Revue des champs collectés, du stockage et des échanges avec l'IA |
 | Organisation | Noms de fichiers en minuscules, mots séparés par des tirets, sans espace ni accent ; ressources classées par type ; code indenté et commenté aux endroits utiles | Relecture de l'arborescence et des modifications |
