@@ -135,22 +135,6 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 | Sécurité et IA | Protéger les données des utilisateurs, ne pas mettre de mots de passe ou de clés d’API sur GitHub et appeler l’IA depuis le serveur. |
 | Organisation et collaboration | Ranger clairement les fichiers, travailler avec des branches et des Pull Requests, puis mettre le site sur le serveur de l’école. |
 
-## 10. Organisation et liens avec les autres travaux
-
-- Les wireframes et l'arborescence définissent les pages et le parcours à réaliser.
-- Les maquettes et le design system définissent les composants, les couleurs, la typographie et les espacements à traduire dans le thème.
-- Le contrat JSON précisera les échanges de données entre les parties concernées du projet.
-- GitHub conservera le code, cette fiche et les décisions de l'équipe. Les évolutions importantes feront l'objet de Pull Requests.
-- La correspondance précise avec les livrables des autres cours reste à compléter selon leurs consignes.
-
-## 11. Décisions restant à prendre
-
-- Vérifier en local l'activation du thème enfant et sa compatibilité avec les réglages prévus.
-- Finaliser les questions et le barème du quiz, puis documenter le calcul et la lecture du score.
-- Confirmer un catalogue de défis rédigés par l'équipe ou une génération assistée par IA.
-- Choisir le fournisseur IA et la méthode d'intégration, en tenant compte du coût et des données transmises.
-- Définir la structure de stockage des résultats et du suivi, ainsi que le contrat JSON.
-- Choisir la solution des formulaires et préciser le parcours de récupération d'accès au compte.
 - Préciser les informations du pied de page, la conservation des données et les éventuelles pages complémentaires nécessaires.
 
 
