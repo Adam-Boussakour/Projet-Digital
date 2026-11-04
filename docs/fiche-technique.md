@@ -132,4 +132,3 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 | Performance | Optimiser les images, limiter les extensions et utiliser au maximum deux familles de polices. |
 | Sécurité et IA | Protéger les données des utilisateurs, ne pas mettre de mots de passe ou de clés d’API sur GitHub et appeler l’IA depuis le serveur. |
 | Organisation et collaboration | Ranger clairement les fichiers, travailler avec des branches et des Pull Requests, puis mettre le site sur le serveur de l’école. |
-
