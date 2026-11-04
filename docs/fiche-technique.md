@@ -127,22 +127,13 @@ La génération de défis par IA reste une possibilité à discuter. Pour prépa
 
 ## 9. Contraintes
 
-| Domaine | Contrainte à respecter | Vérification prévue |
-| --- | --- | --- |
-| Environnement | WordPress, thème enfant « Projet Digital Child » basé sur Twenty Twenty-Five et éditeur Gutenberg | Vérification de la configuration locale et sur le serveur |
-| Supports | Conception mobile first, du mobile de 375 px jusqu'à l'ordinateur de 1440 px ; aucun débordement horizontal | Tests en mode responsive, sur tablette et sur les appareils disponibles |
-| Navigateurs | Compatibilité avec les versions récentes de Chrome, Firefox, Safari et Edge | Tests croisés de l'affichage et des parcours |
-| Accessibilité | Appliquer les bases WCAG 2.2 AA : alternatives textuelles, contrastes, navigation clavier, focus visible, titres structurés et libellés | Tests sans souris, WAVE et Lighthouse |
-| Sémantique et référencement | Zones HTML pertinentes, un titre principal par page, niveaux de titres cohérents, titres de page et descriptions adaptés | Inspection du HTML et validateur W3C |
-| Performance | Images adaptées au web, deux familles de polices au maximum, bibliothèques limitées et justifiées | Onglet Réseau et Lighthouse |
-| Édition client | Contenus éditoriaux modifiables dans Gutenberg sans modifier le code ; contenus dynamiques administrables selon la solution retenue | Test de modification par un tiers |
-|  |
-| IA | Fonction personnalisée intégrée au projet ; appels via le serveur et clés protégées ; traitement des erreurs | Essais avec différents jeux de réponses et historique GitHub |
-| Données personnelles | Ne collecter que les informations nécessaires ; ne pas inclure de données personnelles réelles dans les fichiers de test ; préciser conservation et suppression | Revue des champs collectés, du stockage et des échanges avec l'IA |
-| Organisation | Noms de fichiers en minuscules, mots séparés par des tirets, sans espace ni accent ; ressources classées par type ; code indenté et commenté aux endroits utiles | Relecture de l'arborescence et des modifications |
-| Dépôt | Versionner le thème enfant, la documentation et les données de test ; exclure le cœur WordPress, les extensions téléchargeables, les médias de la médiathèque, la base de données et les secrets | Vérification du `.gitignore` et des fichiers suivis |
-| Collaboration | Branches dédiées, commits réguliers et contributions significatives de chaque membre ; relecture et fusion par Pull Request | Historique GitHub et revue des Pull Requests |
-| Livraison | Développement local, partage par GitHub et déploiement sur le serveur de l'école | Vérification du site déployé et des parcours essentiels |
+| Domaine | Contrainte |
+| --- | --- |
+| Outils | Utiliser WordPress, Gutenberg et un thème enfant. Les contenus doivent être modifiables sans toucher au code. |
+| Affichage et accessibilité | Concevoir d’abord pour mobile, puis adapter aux autres écrans. Garder des textes lisibles, des contrastes suffisants et une navigation accessible au clavier. Tester sur les principaux navigateurs. |
+| Performance | Optimiser les images, limiter les extensions et utiliser au maximum deux familles de polices. |
+| Sécurité et IA | Protéger les données des utilisateurs, ne pas mettre de mots de passe ou de clés d’API sur GitHub et appeler l’IA depuis le serveur. |
+| Organisation et collaboration | Ranger clairement les fichiers, travailler avec des branches et des Pull Requests, puis mettre le site sur le serveur de l’école. |
 
 ## 10. Organisation et liens avec les autres travaux
 
