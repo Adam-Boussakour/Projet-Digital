@@ -1,11 +1,12 @@
-
+/*
 Theme Name: eco-citoyen child
 Description: Theme enfant de Twenty Twenty-Five pour le projet de site sur l impact ecologique.
 Version: 0.1.0
 Template: twentytwentyfive
 Text Domain: projet-equipe-dfef
+*/
 
-/* Ajouter ici les styles du theme enfant. */
+/* Test temporaire */
 body {
     outline: 4px solid red;
 }
